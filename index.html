@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDeals - Premium Second Hand Cars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-car"></i>
+                <span>AutoDeals</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="cars.php" class="nav-link">All Cars</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="admin/login.php" class="nav-link admin-link">Admin</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Find Your Perfect <span class="highlight">Second Hand Car</span></h1>
+                <p class="hero-subtitle">Discover premium quality pre-owned vehicles at unbeatable prices. Your dream car is just a click away!</p>
+                <div class="hero-buttons">
+                    <a href="cars.php" class="btn btn-primary">Browse Cars</a>
+                    <a href="#categories" class="btn btn-secondary">Explore Categories</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./car.png" alt="Premium Car" class="floating-car">
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Cars Available</p>
+            </div>
+            <div class="stat-item">
+                <h3>1000+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Car Brands</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Categories -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Browse by Category</h2>
+                <p>Choose from our wide range of vehicle categories</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card" data-category="suv">
+                    <div class="category-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="SUV">
+                        <div class="category-overlay">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>SUVs</h3>
+                        <p>Spacious and powerful vehicles</p>
+                        <span class="car-count">120+ Cars</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="sedan">
+                    <div class="category-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Sedan">
+                        <div class="category-overlay">
+                            <i class="fas fa-car"></i>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Sedans</h3>
+                        <p>Elegant and comfortable rides</p>
+                        <span class="car-count">80+ Cars</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="hatchback">
+                    <div class="category-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Hatchback">
+                        <div class="category-overlay">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Hatchbacks</h3>
+                        <p>Compact and fuel efficient</p>
+                        <span class="car-count">95+ Cars</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="convertible">
+                    <div class="category-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Convertible">
+                        <div class="category-overlay">
+                            <i class="fas fa-car-alt"></i>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Convertibles</h3>
+                        <p>Open-top driving experience</p>
+                        <span class="car-count">25+ Cars</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="coupe">
+                    <div class="category-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Coupe">
+                        <div class="category-overlay">
+                            <i class="fas fa-car-crash"></i>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Coupes</h3>
+                        <p>Sporty two-door vehicles</p>
+                        <span class="car-count">40+ Cars</span>
+                    </div>
+                </div>
+
+                <div class="category-card" data-category="wagon">
+                    <div class="category-image">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Wagon">
+                        <div class="category-overlay">
+                            <i class="fas fa-shuttle-van"></i>
+                        </div>
+                    </div>
+                    <div class="category-info">
+                        <h3>Wagons</h3>
+                        <p>Family-friendly with extra space</p>
+                        <span class="car-count">30+ Cars</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars -->
+    <section class="featured-cars">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Cars</h2>
+                <p>Hand-picked premium vehicles just for you</p>
+            </div>
+            <div class="cars-grid" id="featured-cars">
+                <!-- Cars will be loaded dynamically -->
+            </div>
+            <div class="text-center">
+                <a href="cars.php" class="btn btn-primary">View All Cars</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose AutoDeals?</h2>
+                <p>We provide the best car buying experience</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Quality Assured</h3>
+                    <p>Every car undergoes thorough inspection before listing</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive pricing with transparent cost breakdown</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support for all your queries</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certified Dealers</h3>
+                    <p>Work only with verified and trusted car dealers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>AutoDeals</span>
+                    </div>
+                    <p>Your trusted partner in finding the perfect second-hand car. Quality, reliability, and customer satisfaction are our top priorities.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.php">All Cars</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="cars.php?category=suv">SUVs</a></li>
+                        <li><a href="cars.php?category=sedan">Sedans</a></li>
+                        <li><a href="cars.php?category=hatchback">Hatchbacks</a></li>
+                        <li><a href="cars.php?category=convertible">Convertibles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@autodeals.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Car Street, Auto City, AC 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AutoDeals. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
